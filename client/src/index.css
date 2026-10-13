@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #7C5CBF;
+    --primary-dark: #5B3FA0;
+    --primary-light: #B9A6E8;
+    --lavender-soft: #E9E0FA;
+    --bg-page: #F7F4FD;
+    --card: #FFFFFF;
+    --text-main: #2D2442;
+    --text-muted: #7A6F8F;
+    --border-color: #DDD2F3;
+    --success: #5BAE8A;
+    --warning: #E3A94B;
+  }
+
+  body {
+    background-color: #F7F4FD;
+    color: #2D2442;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F7F4FD;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #DDD2F3;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B9A6E8;
+  }
+}
+
+/* Custom Utilities for the Theme */
+.shadow-purple-soft {
+  box-shadow: 0 6px 20px rgba(124, 92, 191, 0.12);
+}
+
+.shadow-purple-sm {
+  box-shadow: 0 2px 10px rgba(124, 92, 191, 0.08);
+}
+
+.shadow-purple-lg {
+  box-shadow: 0 10px 30px rgba(124, 92, 191, 0.18);
+}
+
+.border-theme {
+  border-color: #DDD2F3;
+}
+
+.lavender-header-bg {
+  background: linear-gradient(180deg, #E9E0FA 0%, #F7F4FD 100%);
+}
+
+.lavender-card-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF7FF 100%);
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 2px solid #7C5CBF;
+  outline-offset: 2px;
+}
