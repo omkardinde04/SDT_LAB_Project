@@ -7,13 +7,13 @@ import { Building, RotateCcw, Save, CheckCircle, ShieldCheck } from 'lucide-reac
 
 export const AdminSettings: React.FC = () => {
   const [settings, setSettings] = useState<any>({
-    name: 'Apex Institute of Technology & Sciences (AITS)',
-    tagline: 'Empowering Next-Gen Innovators, Engineers & Designers',
-    address: 'Bengaluru Tech Corridor, Electronic City Phase 2, Karnataka 560100',
-    phone: '+91 80 2845 7000',
-    email: 'admissions@apextech.edu',
-    website: 'https://campustour.edu',
-    accreditation: 'NAAC A++ Grade, AICTE Approved, NBA Accredited, NIRF Rank #18',
+    name: 'K. J. Somaiya College of Engineering & Somaiya Vidyavihar',
+    tagline: 'Vidyaniketan of Excellence, Innovation & Character – Mumbai',
+    address: 'Somaiya Vidyavihar Campus, Vidyavihar (East), Mumbai 400077, Maharashtra',
+    phone: '+91 22 6644 9191 / +91 22 6728 3000',
+    email: 'admissions@somaiya.edu',
+    website: 'https://kjsce.somaiya.edu',
+    accreditation: "NAAC 'A+' Grade | Autonomous / SVU | NBA Accredited",
   });
 
   const [isSaved, setIsSaved] = useState(false);

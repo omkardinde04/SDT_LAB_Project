@@ -116,19 +116,19 @@ export const Navbar: React.FC = () => {
             </div>
             <div>
               <span className="font-semibold text-lg text-[#2D2442] tracking-tight flex items-center gap-1.5">
-                CampusTour
+                Somaiya 360°
                 <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-[#E9E0FA] text-[#5B3FA0]">
-                  360°
+                  KJSCE
                 </span>
               </span>
               <p className="text-[11px] text-[#7A6F8F] hidden sm:block leading-none">
-                Interactive Admissions Portal
+                Somaiya Vidyavihar Campus Tour
               </p>
             </div>
           </Link>
 
           {/* Desktop Nav Links */}
-          {user && (
+          {user ? (
             <nav className="hidden lg:flex items-center gap-1">
               {navLinks.map((link) => {
                 const isActive = location.pathname === link.path;
@@ -146,6 +146,16 @@ export const Navbar: React.FC = () => {
                   </Link>
                 );
               })}
+            </nav>
+          ) : (
+            <nav className="hidden sm:flex items-center gap-3">
+              <Link
+                to="/tour"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-[#E9E0FA] text-[#5B3FA0] hover:bg-[#DDD2F3] transition-colors"
+              >
+                <Compass className="w-3.5 h-3.5" />
+                <span>360° Virtual Tour</span>
+              </Link>
             </nav>
           )}
 

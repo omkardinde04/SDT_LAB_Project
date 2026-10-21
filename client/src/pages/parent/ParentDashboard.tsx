@@ -255,7 +255,7 @@ export const ParentDashboard: React.FC = () => {
                 />
                 <div className="space-y-1.5 flex-1 min-w-0">
                   <div className="flex items-center justify-between">
-                    <Badge variant={col.id === 'col-apex' ? 'primary' : 'outline'} size="sm">
+                    <Badge variant={col.id === 'col-kjsce' || col.id === 'col-apex' ? 'primary' : 'outline'} size="sm">
                       {col.naacGrade}
                     </Badge>
                     <span className="text-xs font-semibold text-[#5BAE8A]">

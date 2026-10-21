@@ -65,7 +65,7 @@ export interface College {
 export interface TourSpot {
   id: string;
   title: string;
-  category: 'Entrance' | 'Academics' | 'Labs' | 'Campus Life' | 'Hostel' | 'Cafeteria' | 'Sports' | 'Innovation';
+  category: string;
   description: string;
   panoramaUrl: string;
   thumbnailUrl: string;
@@ -79,6 +79,10 @@ export interface TourSpot {
     pitch: number;
     description: string;
   }[];
+  isAuthenticCapture?: boolean;
+  captureType?: 'simulated_panorama' | 'spherical_360' | 'wide_panorama';
+  photoSource?: string;
+  locationDetails?: string;
 }
 
 export interface Facility {

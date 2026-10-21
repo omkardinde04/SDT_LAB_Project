@@ -17,7 +17,7 @@ import {
 
 export const ParentCompareDecide: React.FC = () => {
   const [colleges, setColleges] = useState<College[]>([]);
-  const [shortlisted, setShortlisted] = useState<Set<string>>(new Set(['col-apex']));
+  const [shortlisted, setShortlisted] = useState<Set<string>>(new Set(['col-kjsce', 'col-apex']));
   const [checklist, setChecklist] = useState<Record<string, boolean>>({
     c1: true,
     c2: true,
@@ -122,12 +122,12 @@ export const ParentCompareDecide: React.FC = () => {
                   {crit.label}
                 </td>
                 {colleges.map((col) => {
-                  const isApex = col.id === 'col-apex';
+                  const isTopChoice = col.id === 'col-kjsce' || col.id === 'col-apex';
                   return (
                     <td
                       key={col.id}
                       className={`p-3.5 font-medium ${
-                        isApex ? 'text-[#7C5CBF] font-semibold bg-[#E9E0FA]/15' : 'text-[#2D2442]'
+                        isTopChoice ? 'text-[#7C5CBF] font-semibold bg-[#E9E0FA]/15' : 'text-[#2D2442]'
                       }`}
                     >
                       {crit.render(col)}

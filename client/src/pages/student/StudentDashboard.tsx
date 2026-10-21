@@ -54,7 +54,7 @@ export const StudentDashboard: React.FC = () => {
   const actionTiles = [
     {
       title: '360° Virtual Tour',
-      desc: 'Explore 8 immersive zones from Main Gate to AI Robotics Labs.',
+      desc: 'Explore 15 authentic panoramic zones from Aryabhat Building to Olympic sports grounds.',
       icon: Compass,
       path: '/student/tour',
       badge: 'Interactive',
@@ -100,11 +100,11 @@ export const StudentDashboard: React.FC = () => {
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-semibold tracking-tight text-white mb-2">
-            Apex Institute of Technology & Sciences
+            K. J. Somaiya College of Engineering
           </h1>
 
           <p className="text-xs sm:text-sm text-[#E9E0FA] leading-relaxed mb-6">
-            Ranked #18 NIRF • NAAC A++ (CGPA 3.78) • 48-Acre Green Campus in Bengaluru Tech Corridor. Experience every quad, lab, and student residence before visiting.
+            Somaiya Vidyavihar University, Mumbai • NAAC 'A+' Grade • Autonomous • 60-Acre Green Campus in Vidyavihar. Explore 15 authentic panoramic zones across engineering labs, library, and sports grounds.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">

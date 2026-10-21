@@ -55,6 +55,8 @@ export function App() {
               <Route path="verify-otp" element={<VerifyOtp />} />
               <Route path="forgot-password" element={<ForgotPassword />} />
               <Route path="profile-setup" element={<ProfileSetup />} />
+              <Route path="tour" element={<StudentVirtualTour />} />
+              <Route path="virtual-tour" element={<StudentVirtualTour />} />
 
               {/* Student Routes (Role Guarded) */}
               <Route

@@ -69,7 +69,7 @@ export interface Hotspot {
 export interface TourSpot {
   id: string;
   title: string;
-  category: 'Entrance' | 'Academics' | 'Labs' | 'Campus Life' | 'Hostel' | 'Cafeteria' | 'Sports' | 'Innovation';
+  category: string;
   description: string;
   panoramaUrl: string;
   thumbnailUrl: string;
@@ -77,6 +77,10 @@ export interface TourSpot {
   status: 'published' | 'draft';
   features: string[];
   hotspots: Hotspot[];
+  isAuthenticCapture?: boolean;
+  captureType?: 'simulated_panorama' | 'spherical_360' | 'wide_panorama';
+  photoSource?: string;
+  locationDetails?: string;
 }
 
 export interface Facility {
